@@ -1,0 +1,170 @@
+{
+	"_meta": 
+	{
+		"sources": 
+		[
+			{
+				"json": "KrisAdditions",
+				"abbreviation": "KA",
+				"full": "Kris' Additions",
+				"version": "1.0.0",
+				"color": "1a5fb4",
+				"authors" : "Kristofer Hall",
+				"url": "",
+				"status": "WIP",
+				"edition": "2024"
+			}
+		]
+	},
+
+	"background": 
+	[
+		{
+			"name": "Custom Background",
+			"source": "KrisAdditions",
+			"freeRules2024": true,
+			"edition": "one",
+			"ability": 
+			[
+				{
+					"choose": {
+						"weighted": 
+						{
+							"from": 
+							[
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+								
+							],
+							"weights": 
+							[
+								2,
+								1
+							]
+						}
+					}
+				},
+				{
+					"choose": 
+					{
+						"weighted": 
+						{
+							"from": 
+							[
+							"str",
+							"dex",
+							"con",
+							"int",
+							"wis",
+							"cha"
+							],
+
+							"weights": 
+							[
+								1,
+								1,
+								1,
+								1,
+								1,
+								1
+							]
+						}
+					}
+				}
+			],
+
+			"feats": 
+			[
+				{
+					"any": true
+				}
+			],
+
+			"skillProficiencies": 
+			[
+				{
+					"any": 2
+				}
+			],
+
+			"toolProficiencies": 
+			[
+				{
+					"anyTool": 1
+				}
+			],
+
+			"startingEquipment": 
+			[
+				{
+					"value": 5000
+				}
+			],
+
+			"entries": 
+			[
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": 
+					[
+						{
+							"type": "item",
+							"name": "Ability Scores:",
+							"entry": "Choose one set based on your Origin Feat"
+						},
+						{
+							"type": "item",
+							"name": "Feat:",
+							"entry": "Any Origin Feat"
+						},
+						{
+							"type": "item",
+							"name": "Skill Proficiencies:",
+							"entry": "Two of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiency:",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment:",
+							"entry": "50 GP, which you may spend before your adventure starts"
+						},
+						{
+							"type": "table",
+							"colLabels": 
+							[
+								"Origin Feat",
+								"Ability Scores Set 1",
+								"Ability Scores Set 2",
+								"Ability Scores Set 3"
+							],		
+							"rows":
+							[
+								["Alert","Dexterity, Constitution, Intelligence","Strength, Intelligence, Wisdom",""],
+								["Crafter","Strength, Dexterity, Intelligence","Strength Constitution, Intelligence",""],
+								["Healer","Constitution, Wisdom, Charisma","Strength, Wisdom, Charisma","Strength, Constitution, Charisma"],
+								["Lucky","Constitution, Intelligence, Charisma","Dexterity, Wisdom, Charisma",""],
+								["Magic Initiate","Intelligence, Wisdom, Charisma","Dexterity, Constitution, Wisdom","Constitution, Intelligence, Wisdom"],
+								["Musician","Strength, Dexterity, Charisma","Dexterity, Intelligence, Charisma",""],
+								["Savage Attacker","Strength, Dexterity, Constitution","",""],
+								["Skilled","Dexterity, Constitution, Charisma","Strength, Intelligence, Charisma","Dexterity, Intelligence, Wisdom"],
+								["Tavern Brawler","Strength, Dexterity, Wisdom","",""],
+								["Tough","Strength, Constitution, Wisdom","",""]
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
+
